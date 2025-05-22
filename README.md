@@ -68,16 +68,36 @@ This project analyzes global air quality data collected by Sensor.Community usin
 - Clusters with longest streaks: **Eastern Europe**, **West Asia**, and **SE Asia**
 
 ---
+##  🐳 Docker-Based Execution
 
-## 🐳 Docker-Based Execution
+1. **Docker**: [Install Docker](https://www.docker.com/get-started)
+2. Have Docker running
 
-```bash
-# Build image
-docker build -t air-quality-analyzer .
+## Quick Start
 
-# Run with data/results mapped
-docker run -it -v $(pwd)/results:/app/results air-quality-analyzer
-```
+### Step 1: Open terminal/cmd and go to the folder pyspark_aqi_assignment
+
+- **Linux/macOS**:
+  ```bash
+  cd ~/path/pyspark_aqi_assignment
+
+- **Windows**:
+  ```CMD
+  cd C:\Users\YourUsername\path\pyspark_aqi_assignment
+
+### Step 2: Run the Application
+
+Simply run the provided shell or batch script to build and execute the Docker container:
+
+- **Linux/macOS**:
+  ```bash
+  ./run_docker_unix.sh
+
+- **Windows**:
+  ```CMD
+  run_docker_win.bat
+
+---
 Container executes:
 
 - Data extraction
